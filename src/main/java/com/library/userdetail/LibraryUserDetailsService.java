@@ -63,13 +63,13 @@ public class LibraryUserDetailsService implements UserDetailsService {
 
 			@Override
 			public String getPassword() {
-				return librarian.getPassword();
+				return librarian != null ? librarian.getPassword() : "";
 			}
 
 			@Override
 			public Collection<? extends GrantedAuthority> getAuthorities() {
 				List<GrantedAuthority> list = new ArrayList<GrantedAuthority>();
-				list.add(new SimpleGrantedAuthority("ROLE_" + librarian.getRole()));
+				list.add(new SimpleGrantedAuthority("ROLE_" + librarian != null ? librarian.getRole() : ""));
 				return list;
 			}
 		};

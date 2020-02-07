@@ -15,3 +15,5 @@ ROLE VARCHAR(200)
 
 INSERT INTO LIBRARIAN (FULL_NAME) values ('Admin User');
 INSERT INTO USER (USER_ID, PASSWORD, ROLE) values ('admin', 'admin', 'ADMIN');
+INSERT INTO LIBRARIAN (FULL_NAME) values ('Library User');
+INSERT INTO USER (USER_ID, PASSWORD, ROLE) values ('lib', 'lib', 'LIBRARIAN');
