@@ -18,6 +18,16 @@ public class Book {
 	@Column(name = "ISSUED")
 	private String issued;
 
+	public Book(Long bookId, String name, String issued) {
+		super();
+		this.bookId = bookId;
+		this.name = name;
+		this.issued = issued;
+	}
+
+	public Book() {
+	}
+
 	public Long getBookId() {
 		return bookId;
 	}

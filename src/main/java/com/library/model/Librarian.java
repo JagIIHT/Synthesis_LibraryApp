@@ -26,13 +26,17 @@ public class Librarian {
 
 	public Librarian() {
 	}
-	
+
 	public Librarian(String userId, String password, String role, String name) {
 		super();
 		this.userId = userId;
 		this.password = password;
 		this.role = role;
 		this.name = name;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getUserId() {

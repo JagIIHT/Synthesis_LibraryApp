@@ -11,6 +11,9 @@ public class LibraryResponse<T> {
 		this.responseBody = responseBody;
 	}
 
+	public LibraryResponse() {
+	}
+
 	public String getStatus() {
 		return status;
 	}
